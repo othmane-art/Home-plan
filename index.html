@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Workout Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>??? Workout Tracker</h1>
+
+    <div class="goals">
+      <h2>Set Monthly Goals</h2>
+      <input type="number" id="goalPushups" placeholder="Pushups" />
+      <input type="number" id="goalSquats" placeholder="Squats" />
+      <input type="number" id="goalAbs" placeholder="Abdominals" />
+      <button onclick="saveGoals()">Save Goals</button>
+    </div>
+
+    <div class="log">
+      <h2>Log Today’s Workout</h2>
+      <input type="number" id="pushups" placeholder="Pushups" />
+      <input type="number" id="squats" placeholder="Squats" />
+      <input type="number" id="abs" placeholder="Abdominals" />
+      <button onclick="logWorkout()">Log Workout</button>
+    </div>
+
+    <div class="progress">
+      <h2>Progress This Month</h2>
+      <div id="progressDisplay"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
